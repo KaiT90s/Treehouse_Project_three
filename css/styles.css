@@ -1,0 +1,194 @@
+
+
+* {
+  	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+ 	box-sizing: border-box;
+}
+
+body {
+  font-family: "Times New Roman", sans-serif;
+  color: #5e7384;
+}
+
+header {
+	text-align: center;
+	margin: 0 auto;
+}
+
+footer {
+	margin-top: 20px;
+	text-align: center;
+	color: #9ca3a8;
+}
+
+form {
+ 	margin: 10px auto;
+ 	padding: 10px 20px;
+ 	background: #fff;
+ 	border-radius: 8px;
+}
+
+h1 {
+	background: #000;
+	color: #fff;
+  margin: 0 0 30px 0;
+  padding: 20px 20px;
+}
+
+legend {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  	background: rgba(255,255,255,0.1);
+  	border: none;
+  	border-radius: 5px;
+  	font-size: 1em;
+  	height: auto;
+  	margin: 0;
+  	outline: 0;
+  	padding: 15px;
+  	width: 100%;
+  	background-color: #eff0f1;
+  	margin-bottom: 30px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  	margin: 0 10px 8px 0;
+}
+
+select {
+  	padding: 6px;
+  	height: 46px;
+}
+
+button {
+  	padding: 19px 39px 18px 39px;
+  	color: #FFF;
+  	background-color: #00c1b7;
+  	font-size: 26px;
+  	text-align: center;
+  	font-style: normal;
+  	border-radius: 5px;
+  	width: 100%;
+  	border: 1px solid #3ac162;
+  	border-width: 1px 1px 3px;
+  	box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  	margin-bottom: 10px;
+}
+
+fieldset {
+  	border: none;
+}
+
+input:focus {
+  border: 3px solid #5e7384;
+}
+
+/* Class Selectors  **********/
+
+.hr1,
+.hr2 {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.hr2,
+.hr3 {
+	height: 3px;
+	background: #000;
+}
+
+.hr1 {
+	 height: 8px;
+	 background: #000;
+	 margin-bottom: -5px;
+}
+
+.first_legend {
+  margin-bottom: 15px;
+}
+
+.user_info label {
+  	display: block;
+  	margin-bottom: 8px;
+  	font-size: 1em;
+}
+
+.zip_code {
+	max-width: 50%;
+}
+
+
+/***** Media Query   ***********/
+
+@media (min-width: 768px) {
+
+  header {
+    max-width: 720px;
+  }
+
+  header p {
+    margin-bottom: 2em;
+  }
+
+  .wrapper {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .wrapper2 input, select {
+    width: 75%;
+    float: right;
+  }
+
+  .wrapper2 label {
+    width: 25%;
+    float: left;
+    margin-bottom: 3.7em;
+  }
+
+  .wrapper2 {
+    clear: both;
+    margin-bottom: 70px;
+  }
+
+  input[id="zip"] {
+    width: 25%;
+    float: left;
+  }
+  
+  .clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
