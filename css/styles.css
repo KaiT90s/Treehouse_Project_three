@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: "Times New Roman", sans-serif;
+  font-family: 'Amiko', sans-serif;
   color: #5e7384;
 }
 
@@ -37,12 +37,13 @@ h1 {
 }
 
 legend {
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: bold;
 }
 
 input[type="text"],
 input[type="email"],
+input[type="tel"],
 textarea,
 select {
   	background: rgba(255,255,255,0.1);
@@ -87,9 +88,24 @@ fieldset {
   	border: none;
 }
 
-input:focus {
+select {
+  color: #5e7384;
+}
+
+
+/* Pseudo Classes  **********/
+
+input:focus,
+textarea:focus,
+select:focus {
   border: 3px solid #5e7384;
 }
+
+::placeholder {
+  padding-left: 75%;
+  font-style: italic;
+}
+
 
 /* Class Selectors  **********/
 
@@ -125,6 +141,9 @@ input:focus {
 	max-width: 50%;
 }
 
+.textarea_label {
+  line-height: 2.5;
+}
 
 /***** Media Query   ***********/
 
@@ -158,6 +177,12 @@ input:focus {
     clear: both;
     margin-bottom: 70px;
   }
+
+
+
+  ::placeholder {
+    padding-left: 85%;
+  } 
 
   input[id="zip"] {
     width: 25%;
